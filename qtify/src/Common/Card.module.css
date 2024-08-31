@@ -1,0 +1,21 @@
+.frame {
+  height: 232px;
+  width: 159px;
+}
+.group {
+  width: 159px;
+  height: 205px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+.name {
+  height: 27px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.image {
+  height: 170px;
+  width: 159px;
+}
