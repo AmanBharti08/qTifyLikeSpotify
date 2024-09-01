@@ -32,11 +32,17 @@ const Section = ({ title, apiAlbum }) => {
         display: "flex",
         flexDirection: "column",
         alignContent: "center",
-        margin: "auto",
+        // margin: "auto",
       }}
     >
       <section>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: "17px",
+          }}
+        >
           <h4 style={{ color: "white" }}>{title}</h4>
           <h4
             onClick={() => setChange(!change)}
@@ -53,7 +59,7 @@ const Section = ({ title, apiAlbum }) => {
               sx={{
                 maxWidth: "100%",
                 width: "100%",
-                marginLeft: "0.5px",
+                marginLeft: "1px",
               }}
               container
               spacing={6}
