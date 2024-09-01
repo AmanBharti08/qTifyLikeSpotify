@@ -5,7 +5,14 @@ import styles from "./Albums.module.css";
 const Albums = () => {
   return (
     <div className={styles.container}>
-      <Section />
+      <Section
+        title={"Top Albums"}
+        apiAlbum={"https://qtify-backend-labs.crio.do/albums/top"}
+      />
+      <Section
+        title={"New Albums"}
+        apiAlbum={"https://qtify-backend-labs.crio.do/albums/new"}
+      />
     </div>
   );
 };
