@@ -32,20 +32,18 @@ const Section = ({ title, apiAlbum }) => {
         display: "flex",
         flexDirection: "column",
         alignContent: "center",
+        margin: "auto",
       }}
     >
       <section>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <h4 style={{ color: "white" }}>{title}</h4>
-          <button
-            style={{ background: "none", border: "none" }}
+          <h4
             onClick={() => setChange(!change)}
+            style={{ color: "#34C94B", cursor: "pointer" }}
           >
-            {" "}
-            <h4 style={{ color: "#34C94B", cursor: "pointer" }}>
-              {change ? "Show All" : "Collapse"}
-            </h4>
-          </button>
+            {change ? "Show All" : "Collapse"}
+          </h4>
         </div>
         <div>
           {change ? (
