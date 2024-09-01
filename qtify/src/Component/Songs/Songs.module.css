@@ -1,0 +1,11 @@
+.main {
+  color: white;
+  /* background-color: blueviolet; */
+  margin-top: 165px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.container {
+  height: 400px;
+  overflow: hidden;
+}
