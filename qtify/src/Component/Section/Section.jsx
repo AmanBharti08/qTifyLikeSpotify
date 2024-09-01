@@ -27,22 +27,40 @@ const Section = ({ title, apiAlbum }) => {
   }, []);
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box
+      sx={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignContent: "center",
+      }}
+    >
       <section>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <h4 style={{ color: "white" }}>{title}</h4>
-          <h4
-            style={{ color: "#34C94B", cursor: "pointer" }}
+          <button
+            style={{ background: "none", border: "none" }}
             onClick={() => setChange(!change)}
           >
-            {change ? "Show All" : "Collapse"}
-          </h4>
+            {" "}
+            <h4 style={{ color: "#34C94B", cursor: "pointer" }}>
+              {change ? "Show All" : "Collapse"}
+            </h4>
+          </button>
         </div>
         <div>
           {change ? (
             <Carousal apiAlbum={apiAlbum} />
           ) : (
-            <Grid sx={{ maxWidth: "100%" }} container spacing={6}>
+            <Grid
+              sx={{
+                maxWidth: "100%",
+                width: "100%",
+                marginLeft: "0.5px",
+              }}
+              container
+              spacing={6}
+            >
               {list.map((item, index) => {
                 return (
                   <Grid item key={index}>

@@ -34,7 +34,7 @@ export default function Carousal({ apiAlbum }) {
   }, []);
 
   return (
-    <section>
+    <section style={{ overflow: "hidden", height: "300px" }}>
       <Swiper
         slidesPerView={7}
         spaceBetween={0}
